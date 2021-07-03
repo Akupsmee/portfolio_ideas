@@ -13,7 +13,7 @@ about.addEventListener('click', ()=>{
         top : 50,
         right: 50,
         bottom: 50,
-        left : 30,
+        left : 10,
         mount: aboutContent,
         onfocus: function(){
             this.setBackground('#00aa00')
@@ -24,25 +24,7 @@ about.addEventListener('click', ()=>{
     })
 })
 
-about.addEventListener('touchmove', ()=>{
-    const aboutBox = new WinBox({
-        title : ' About Me',
-        background : '#00aa00',
-        width: '400px',
-        height: '400px',
-        top : 50,
-        right: 30,
-        bottom: 50,
-        left : 5,
-        mount: aboutContent,
-        onfocus: function(){
-            this.setBackground('#00aa00')
-        },
-        onblur: function(){
-            this.setBackground('#777')
-        },
-    })
-})
+
 
 
 contact.addEventListener('click', ()=>{
@@ -51,27 +33,8 @@ contact.addEventListener('click', ()=>{
         background : '#00aa00',
         width: '400px',
         height: '400px',
-        top : 350,
+        top : 150,
         right: 50,
-        bottom: 50,
-        left : 80,
-        mount: contactContent,
-        onfocus: function(){
-            this.setBackground('#00aa00')
-        },
-        onblur: function(){
-            this.setBackground('#777')
-        },
-    })
-})
-contact.addEventListener('touchmove', ()=>{
-    const contactBox = new WinBox({
-        title : ' Contact Me',
-        background : '#00aa00',
-        width: '400px',
-        height: '400px',
-        top : 100,
-        right: 30,
         bottom: 50,
         left : 20,
         mount: contactContent,
@@ -83,4 +46,5 @@ contact.addEventListener('touchmove', ()=>{
         },
     })
 })
+
 
